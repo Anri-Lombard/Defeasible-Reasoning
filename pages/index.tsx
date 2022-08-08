@@ -54,6 +54,9 @@ const Home: NextPage = () => {
             </ul>
           </ol>
         </div>
+        <div>
+          Atoms <span className="hover:scale-115 m-5">this</span>
+        </div>
       </div>
     </div>
   )
