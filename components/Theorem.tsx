@@ -1,8 +1,10 @@
+import styles from '../styles/Theorem.module.css'
+
 const Theorem = () => {
     return (
         <div>
-            <span>Theorem</span>
-            <span>Proof</span>
+            <span className={styles.theorem}>Theorem:</span>
+            <span className={styles.proof}>Proof:</span>
         </div>
     )
 }

@@ -20,6 +20,12 @@ const Home: NextPage = () => {
           <div className={styles.contentsText}>
             <h3 className={styles.contentsHeader}>Content</h3>
             <ol>
+              <span>Introduction</span>
+              <ul>
+                <li>Artificial Intellegence</li>
+                <li>Knowledge Representation</li>
+                <li>Defeasible Reasoning</li>
+              </ul>
               <span>Propositional logic</span>
               <ul>
                 <li>Syntax</li>
@@ -57,7 +63,29 @@ const Home: NextPage = () => {
           </div>
         </div>
         <section className={styles.section}>
-          <h1>Propositional Logic</h1>
+          <h1>1. Introduction</h1>
+          
+          <div>
+            <h3>Syntax</h3>
+            <Theorem></Theorem>
+          </div>
+          <div>
+            <h3>Symantics</h3>
+
+          </div>
+          <div>
+            <h3>Deductive Systems</h3>
+
+          </div>
+          <div>
+            <h3>Consequence Relations</h3>
+          </div>
+          <div>
+            <h3>Classical Deduction</h3>
+          </div>
+        </section>
+        <section className={styles.section}>
+          <h1>2. Propositional Logic</h1>
 
           <div>
             <h3>Syntax</h3>

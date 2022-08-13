@@ -1,0 +1,25 @@
+.theorem {
+    display: block;
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+    background-color: #35858B;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px 20px 0 0;
+    border: 1.5px solid white
+}
+
+.proof {
+    display: block;
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+    background-color: #4FBDBA;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0 0 20px 20px;
+    border: 1.5px solid white
+}

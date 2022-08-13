@@ -11,6 +11,7 @@
   
   .contents {
     border: 1px solid white;
+    background-color: #072227;
     border-radius: 15px;
     padding: 2rem;
     font-size: 16px;
@@ -24,7 +25,7 @@
   .contents li {
     list-style-type: square;
   }
-  
+
   .contents span {
     font-weight: bold;
     font-size: 20px;
@@ -32,6 +33,10 @@
   
   .contentsHeader {
     font-size: 22px;
+  }
+
+  .contentsText ul {
+    margin: 1rem 0;
   }
   
   .main {
