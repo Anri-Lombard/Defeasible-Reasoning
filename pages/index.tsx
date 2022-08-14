@@ -71,7 +71,7 @@ const Home: NextPage = () => {
           </div>
           <div>
             <h3>Symantics</h3>
-
+            <Theorem></Theorem>
           </div>
           <div>
             <h3>Deductive Systems</h3>
