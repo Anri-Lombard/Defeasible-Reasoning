@@ -8,41 +8,34 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Defeasible Reasoning</title>
+        <title>Defeasible Reasoning Tool</title>
         <meta name="description" content="Learn Defeasible Reasoning for Knowledge Representation step-by-step" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
+      <div className={styles.area}>
+        <ul className={styles.circles}>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
         {/* TODO: Make links to places on page */}
-        <h1 className={styles.mainHeader}>Defeasible Reasoning</h1>
+        <h1 className={styles.mainHeader}>Defeasible Reasoning Tool</h1>
         <div className={styles.contents}>
           <div className={styles.contentsText}>
-            <h3 className={styles.contentsHeader}>Content</h3>
             <ol>
               <span>Introduction</span>
               <ul>
                 <li>Artificial Intellegence</li>
                 <li>Knowledge Representation</li>
                 <li>Defeasible Reasoning</li>
-              </ul>
-              <span>Propositional logic</span>
-              <ul>
-                <li>Syntax</li>
-                <li>Symantics</li>
-                <li>Deductive Systems</li>
-                <li>Consequence Relations</li>
-                <li>Classical Deduction</li>
-              </ul>
-              <span>Approaches to Defeasible Reasoning</span>
-              <ul>
-                <li>Belief Revision</li>
-                <li>Circumscription</li>
-                <li>Default Logic</li>
-                <li>Propositional Typicality Logic</li>
-                <li>Nonmonotonic Modal Logic</li>
-                <li>Autoepistemic Logic</li>
-                <li>Preferential Approach</li>
               </ul>
               <span>Preferential Reasoning</span>
               <ul>
@@ -59,29 +52,27 @@ const Home: NextPage = () => {
                 <li>Algorithm for Rational Closure</li>
                 <li>Rational Entailment</li>
               </ul>
+              <span>Tool Walkthrough</span>
+              <ul>
+                <li>Downloadable GUI</li>
+                <li>How to make queries</li>
+                <li>How to add custom databases</li>
+              </ul>
+              <span>Contributing to the tool</span>
+              <ul>
+                <li>Contribution Guideline and Github Repository</li>
+              </ul>
             </ol>
           </div>
         </div>
         <section className={styles.section}>
           <h1>1. Introduction</h1>
-          
-          <div>
-            <h3>Syntax</h3>
-            <Theorem></Theorem>
-          </div>
-          <div>
-            <h3>Symantics</h3>
-            <Theorem></Theorem>
-          </div>
-          <div>
-            <h3>Deductive Systems</h3>
 
+          <div>
+            <Theorem></Theorem>
           </div>
           <div>
-            <h3>Consequence Relations</h3>
-          </div>
-          <div>
-            <h3>Classical Deduction</h3>
+            <Theorem></Theorem>
           </div>
         </section>
         <section className={styles.section}>
@@ -89,6 +80,8 @@ const Home: NextPage = () => {
 
           <div>
             <h3>Syntax</h3>
+          </div>
+          <div>
             <Theorem></Theorem>
           </div>
           <div>
