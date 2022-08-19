@@ -90,11 +90,41 @@ const Home: NextPage = () => {
         <section className={styles.section}>
           <h1>1. Introduction</h1>
 
-          <div>
-            <Theorem></Theorem>
+          <h3 className={styles.sectionHeading}>Artificial Intelligence</h3>
+          <div className={styles.videos}>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ad79nYk2keg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
-          <div>
-            <Theorem></Theorem>
+          <div className={styles.sectionSpan}>
+            Artificial intelligence (AI) is intelligence demonstrated by machines, as opposed
+            to the natural intelligence displayed by animals including humans. AI research has
+            been defined as the field of study of intelligent agents, which refers to any system
+            that perceives its environment and takes actions that maximize its chance of achieving
+            its goals - <strong>Wikipedia</strong>
+          </div>
+
+          <h3 className={styles.sectionHeading}>Knowledge Representation</h3>
+          <div className={styles.videos}>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fXGJcd28SM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
+          </div>
+          <div className={styles.sectionSpan}>
+            Knowledge representation and reasoning (KRR, KR&R, KR²) is the field of artificial
+            intelligence (AI) dedicated to representing information about the world in a form that
+            a computer system can use to solve complex tasks such as diagnosing a medical condition
+            or having a dialog in a natural language. Knowledge representation incorporates findings
+            from psychology[1] about how humans solve problems and represent knowledge in order to
+            design formalisms that will make complex systems easier to design and build. Knowledge
+            representation and reasoning also incorporates findings from logic to automate various
+            kinds of reasoning, such as the application of rules or the relations of sets and subsets
+            - <strong>Wikipedia</strong>
+          </div>
+
+          <h3>Defeasible Reasoning</h3>
+          <div className={styles.videos}>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf_S4d2BU4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div className={styles.sectionSpan}>
+            
           </div>
         </section>
         <section className={styles.section}>
@@ -119,6 +149,18 @@ const Home: NextPage = () => {
           </div>
           <div>
             <h3>Classical Deduction</h3>
+          </div>
+        </section>
+        <section className={styles.section}>
+          <h1>3. Tool Walkthrough</h1>
+          <div>
+            <h3>Downloadable GUI</h3>
+          </div>
+          <div>
+            <h3>How To Make Queries</h3>
+          </div>
+          <div>
+            <h3>How To Add Custom Databases</h3>
           </div>
         </section>
         {
