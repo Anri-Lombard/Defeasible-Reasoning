@@ -1,10 +1,32 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import React, { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css'
 import Theorem from '../components/Theorem'
 
 const Home: NextPage = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [showScrollUp, setShowScrollUp] = useState(false);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+    console.log(scrollPosition);
+    if (position > 400) {
+      setShowScrollUp(true);
+    } else {
+      setShowScrollUp(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
+
   return (
     <div className={styles.container}>
       <Head>
@@ -99,6 +121,11 @@ const Home: NextPage = () => {
             <h3>Classical Deduction</h3>
           </div>
         </section>
+        {
+          showScrollUp ?
+            <button className={styles.upButton} onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })}>Scroll Up</button>
+            : ""
+        }
       </div>
     </div>
   )

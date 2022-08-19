@@ -1,7 +1,7 @@
 .theorem {
     display: block;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     margin: auto;
     background-color: #35858B;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -14,7 +14,7 @@
 .proof {
     display: block;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     margin: auto;
     background-color: #4FBDBA;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
