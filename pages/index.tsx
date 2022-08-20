@@ -3,10 +3,14 @@ import Head from 'next/head'
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css'
 import Theorem from '../components/Theorem'
+import Defenition from '../components/Defenition'
 
 const Home: NextPage = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [showScrollUp, setShowScrollUp] = useState(false);
+
+  const inlineFormula = `k_{n+1} = n^2 + k_n^2 - k_{n-1}`;
+  const blockFormula = `\\int_0^\\infty x^2 dx`; 
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -119,7 +123,7 @@ const Home: NextPage = () => {
             - <strong>Wikipedia</strong>
           </div>
 
-          <h3>Defeasible Reasoning</h3>
+          <h3 className={styles.sectionHeading}>Defeasible Reasoning</h3>
           <div className={styles.videos}>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf_S4d2BU4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
@@ -128,13 +132,14 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section className={styles.section}>
-          <h1>2. Propositional Logic</h1>
+          <h1>2. Preferential Reasoning</h1>
 
           <div>
-            <h3>Syntax</h3>
+            <h3 className={styles.sectionHeading}>Preferential Consequence Relations</h3>
           </div>
           <div>
-            <Theorem></Theorem>
+             <Defenition>
+             </Defenition>
           </div>
           <div>
             <h3>Symantics</h3>
