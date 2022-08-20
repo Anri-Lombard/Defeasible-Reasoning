@@ -5,12 +5,13 @@ import styles from '../styles/Home.module.css'
 import Theorem from '../components/Theorem'
 import Defenition from '../components/Defenition'
 
+import 'katex/dist/katex.min.css';
+import { InlineMath } from 'react-katex';
+
 const Home: NextPage = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [showScrollUp, setShowScrollUp] = useState(false);
 
-  const inlineFormula = `k_{n+1} = n^2 + k_n^2 - k_{n-1}`;
-  const blockFormula = `\\int_0^\\infty x^2 dx`; 
 
   const handleScroll = () => {
     const position = window.pageYOffset;
@@ -63,20 +64,13 @@ const Home: NextPage = () => {
                 <li>Knowledge Representation</li>
                 <li>Defeasible Reasoning</li>
               </ul>
-              <span>Preferential Reasoning</span>
+              <span>Key Concepts</span>
               <ul>
-                <li>Preferential Consequence Relations</li>
-                <li>Preferential Interpretations</li>
-                <li>Ranked Interpretations</li>
-                <li>Preferential Entailment</li>
-                <li>Ranked Entailment</li>
-              </ul>
-              <span>Nonmonotonic Reasoning</span>
-              <ul>
+                <li>Non-monotonic Reasoning</li>
                 <li>Minimal Ranked Entailment</li>
                 <li>Rational Closure</li>
                 <li>Algorithm for Rational Closure</li>
-                <li>Rational Entailment</li>
+                <li>Defeasible Entailment</li>
               </ul>
               <span>Tool Walkthrough</span>
               <ul>
@@ -88,15 +82,16 @@ const Home: NextPage = () => {
               <ul>
                 <li>Contribution Guideline and Github Repository</li>
               </ul>
+              <span>About this website</span>
             </ol>
           </div>
         </div>
         <section className={styles.section}>
           <h1>1. Introduction</h1>
 
-          <h3 className={styles.sectionHeading}>Artificial Intelligence</h3>
+          <h3 className={styles.sectionHeading}>1.1 Artificial Intelligence</h3>
           <div className={styles.videos}>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ad79nYk2keg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ad79nYk2keg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
           <div className={styles.sectionSpan}>
             Artificial intelligence (AI) is intelligence demonstrated by machines, as opposed
@@ -106,9 +101,9 @@ const Home: NextPage = () => {
             its goals - <strong>Wikipedia</strong>
           </div>
 
-          <h3 className={styles.sectionHeading}>Knowledge Representation</h3>
+          <h3 className={styles.sectionHeading}>1.2 Knowledge Representation</h3>
           <div className={styles.videos}>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fXGJcd28SM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fXGJcd28SM8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
           </div>
           <div className={styles.sectionSpan}>
@@ -123,50 +118,47 @@ const Home: NextPage = () => {
             - <strong>Wikipedia</strong>
           </div>
 
-          <h3 className={styles.sectionHeading}>Defeasible Reasoning</h3>
+          <h3 className={styles.sectionHeading}>1.3 Defeasible Reasoning</h3>
           <div className={styles.videos}>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf_S4d2BU4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf_S4d2BU4M" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <div className={styles.sectionSpan}>
-            
+
           </div>
         </section>
         <section className={styles.section}>
-          <h1>2. Preferential Reasoning</h1>
+          <h1>2. Key Concepts</h1>
 
           <div>
-            <h3 className={styles.sectionHeading}>Preferential Consequence Relations</h3>
+            <h3 className={styles.sectionHeading}>2.1 Non-monotonic Reasnoning</h3>
           </div>
           <div>
-             <Defenition>
-             </Defenition>
+            <h3 className={styles.sectionHeading}>2.2 Minimal Ranked Entailment</h3>
           </div>
           <div>
-            <h3>Symantics</h3>
-
+            <h3 className={styles.sectionHeading}>2.3 Rational Closure</h3>
           </div>
           <div>
-            <h3>Deductive Systems</h3>
-
+            <h3 className={styles.sectionHeading}>2.4 Algorithm for Rational Closure</h3>
           </div>
           <div>
-            <h3>Consequence Relations</h3>
-          </div>
-          <div>
-            <h3>Classical Deduction</h3>
+            <h3 className={styles.sectionHeading}>2.5 Defeasible Entailment</h3>
           </div>
         </section>
         <section className={styles.section}>
           <h1>3. Tool Walkthrough</h1>
           <div>
-            <h3>Downloadable GUI</h3>
+            <h3 className={styles.sectionHeading}>3.1 Downloadable GUI</h3>
           </div>
           <div>
-            <h3>How To Make Queries</h3>
+            <h3 className={styles.sectionHeading}>3.2 How To Make Queries</h3>
           </div>
           <div>
-            <h3>How To Add Custom Databases</h3>
+            <h3 className={styles.sectionHeading}>3.3 How To Add Custom Databases</h3>
           </div>
+        </section>
+        <section className={styles.section}>
+          <h1>4. About this Website</h1>
         </section>
         {
           showScrollUp ?
