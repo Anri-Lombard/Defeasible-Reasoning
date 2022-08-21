@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Link from 'next/link';
+import Image from 'next/image';
 import Head from 'next/head'
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css'
@@ -151,10 +151,21 @@ const Home: NextPage = () => {
           <div>
             <h3 className={styles.sectionHeading}>3.1 Downloadable GUI</h3>
             {/* <Link to={gui} target="_blank" download>Download</Link> */}
-            <a download="./hi.txt">Donwload</a>
+            <div className={styles.sectionSpan}>
+              <a href="https://github.com/Anri-Lombard/Defeasible-Reasoning/blob/main/GUI/RationalClosureGUI.zip" target="_blank" rel="noreferrer"><u><strong>Click Here To Download GUI</strong></u></a>
+            </div>
           </div>
           <div>
             <h3 className={styles.sectionHeading}>3.2 How To Make Queries</h3>
+            <div className={styles.sectionSpan}>
+              Prerequisites: Make sure you have Python and Java installed on your machine <br /><br />
+              <strong>Step 1</strong>: Download the Defeasible Reasoning GUI <br /><br />
+              <strong>Step 2</strong>: Add own database along with defeasible query in the form of a .txt file (see section 3.2)<br /><br />
+              <strong>Step 3</strong>: Enter the database name without the .txt extension and choose the entailment checker algorithm you need.
+               - Regular simply outputs the process whereby Binary outputs &ldquo;true&rdquo; or &ldquo;false&rdquo;
+              <strong>Step 4</strong>: Grab a cup of coffee and relax, the rest will be done for you. <br /><br />
+              <Image src="/images/FinalResult.png" alt="final result" layout="responsive" priority width={100} height={70}/>
+            </div>
           </div>
           <div>
             <h3 className={styles.sectionHeading}>3.3 How To Add Custom Databases</h3>
