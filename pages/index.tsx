@@ -6,7 +6,7 @@ import Theorem from '../components/Theorem'
 import Defenition from '../components/Defenition'
 
 import 'katex/dist/katex.min.css';
-import { InlineMath } from 'react-katex';
+// import { InlineMath } from 'react-katex';
 
 const Home: NextPage = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -120,7 +120,7 @@ const Home: NextPage = () => {
 
           <h3 className={styles.sectionHeading}>1.3 Defeasible Reasoning</h3>
           <div className={styles.videos}>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf_S4d2BU4M" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf_S4d2BU4M" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
           <div className={styles.sectionSpan}>
 
