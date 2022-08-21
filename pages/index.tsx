@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Link from 'next/link';
 import Head from 'next/head'
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css'
@@ -149,6 +150,8 @@ const Home: NextPage = () => {
           <h1>3. Tool Walkthrough</h1>
           <div>
             <h3 className={styles.sectionHeading}>3.1 Downloadable GUI</h3>
+            {/* <Link to={gui} target="_blank" download>Download</Link> */}
+            <a download="./hi.txt">Donwload</a>
           </div>
           <div>
             <h3 className={styles.sectionHeading}>3.2 How To Make Queries</h3>
