@@ -158,7 +158,13 @@ const Home: NextPage = () => {
           </div>
         </section>
         <section className={styles.section}>
-          <h1>4. About this Website</h1>
+          <h1>4. Contributing to the tool</h1>
+          <div>
+            <h3 className={styles.sectionHeading}>4.1 Contribution Guideline and Github Repository</h3>
+          </div>
+        </section>
+        <section className={styles.section}>
+          <h1>5. About This Website</h1>
         </section>
         {
           showScrollUp ?
