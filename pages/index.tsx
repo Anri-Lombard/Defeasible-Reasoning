@@ -162,9 +162,12 @@ const Home: NextPage = () => {
               <strong>Step 1</strong>: Download the Defeasible Reasoning GUI <br /><br />
               <strong>Step 2</strong>: Add own database along with defeasible query in the form of a .txt file (see section 3.2)<br /><br />
               <strong>Step 3</strong>: Enter the database name without the .txt extension and choose the entailment checker algorithm you need.
-               - Regular simply outputs the process whereby Binary outputs &ldquo;true&rdquo; or &ldquo;false&rdquo;
+              - Regular simply outputs the process whereby Binary outputs &ldquo;true&rdquo; or &ldquo;false&rdquo;
               <strong>Step 4</strong>: Grab a cup of coffee and relax, the rest will be done for you. <br /><br />
-              <Image src="/images/FinalResult.png" alt="final result" layout="responsive" priority width={100} height={70}/>
+              <figure className="p-10 border-2 border-white">
+                <Image className="rounded-lg" src="/images/FinalResult.png" alt="final result" layout="responsive" priority width={100} height={100} />
+                <figcaption>Final Result</figcaption>
+              </figure>
             </div>
           </div>
           <div>
