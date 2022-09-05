@@ -1,10 +1,9 @@
 import type { NextPage } from 'next'
+import Link from 'next/link';
 import Image from 'next/image';
 import Head from 'next/head'
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css'
-import Theorem from '../components/Theorem'
-import Defenition from '../components/Defenition'
 
 import 'katex/dist/katex.min.css';
 // import { InlineMath } from 'react-katex';
@@ -61,34 +60,55 @@ const Home: NextPage = () => {
             <ol>
               <span>Introduction</span>
               <ul>
-                <li>Artificial Intellegence</li>
-                <li>Knowledge Representation</li>
-                <li>Defeasible Reasoning</li>
+                <li>
+                  <a href="#section_ai">Artificial Intellegence</a>
+                </li>
+                <li>
+                  <a href="#section_kr">Knowledge Representation</a>
+                </li>
+                <li>
+                  <a href="#section_dr">Defeasible Reasoning</a>
+                </li>
               </ul>
               <span>Key Concepts</span>
               <ul>
-                <li>Non-monotonic Reasoning</li>
-                <li>Rational Closure</li>
-                <li>Algorithms for Rational Closure</li>
+                <li>
+                  <a href="#section_nr">Non-monotonic Reasoning</a>
+                </li>
+                <li>
+                  <a href="#section_rc">Rational Closure</a>
+                </li>
+                <li>
+                  <a href="#section_arc">Algorithms for Rational Closure</a>
+                </li>
               </ul>
               <span>Tool Walkthrough</span>
               <ul>
-                <li>Downloadable GUI</li>
-                <li>How to make queries</li>
-                <li>How to add custom databases</li>
+                <li>
+                  <a href="#download_gui">Downloadable GUI</a>
+                </li>
+                <li>
+                  <a href="#section_htmq">How to make queries</a>
+                </li>
+                <li>
+                  <a href="#section_htacd">How to add custom databases</a>
+                </li>
               </ul>
-              <span>Contributing to the tool</span>
-              <ul>
-                <li>Contribution Guideline and Github Repository</li>
-              </ul>
-              <span>About this website</span>
+              <span>
+                <a href="#section_guidelines">
+                Contributing to the tool
+                </a>
+              </span> <br/><br/>
+              <span>
+                <a href="#about">About this website</a>
+              </span>
             </ol>
           </div>
         </div>
         <section className={styles.section}>
           <h1>1. Introduction</h1>
 
-          <h3 className={styles.sectionHeading}>1.1 Artificial Intelligence</h3>
+          <h3 className={styles.sectionHeading} id="section_ai">1.1 Artificial Intelligence</h3>
           <div className={styles.videos}>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ad79nYk2keg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
@@ -102,7 +122,7 @@ const Home: NextPage = () => {
             </a>
           </div>
 
-          <h3 className={styles.sectionHeading}>1.2 Knowledge Representation</h3>
+          <h3 className={styles.sectionHeading} id="section_kr">1.2 Knowledge Representation</h3>
           <div className={styles.videos}>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/fXGJcd28SM8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
@@ -121,16 +141,16 @@ const Home: NextPage = () => {
             </a>
           </div>
 
-          <h3 className={styles.sectionHeading}>1.3 Defeasible Reasoning</h3>
+          <h3 className={styles.sectionHeading} id="section_dr">1.3 Defeasible Reasoning</h3>
           <div className={styles.videos}>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf_S4d2BU4M" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
           <div className={styles.sectionSpan}>
-            Defeasible reasoning is an important form of non-monotonic reasoning because it introduces mechanisms for 
-            strengthening and weakening new information presented to a reasoner. Defeasible reasoning also deals with 
-            atypical reasoning situations in which humans inherently reason differently, whether due to their beliefs, 
+            Defeasible reasoning is an important form of non-monotonic reasoning because it introduces mechanisms for
+            strengthening and weakening new information presented to a reasoner. Defeasible reasoning also deals with
+            atypical reasoning situations in which humans inherently reason differently, whether due to their beliefs,
             context or other circumstances. Defeasible reasoning and its mechanisms allow AI systems to represent
-            human reasoning more accurately than classical reasoning and more accurately than the basic notion of 
+            human reasoning more accurately than classical reasoning and more accurately than the basic notion of
             non-monotonicreasoning.
             <br /><br />
             <a href="https://projects.cs.uct.ac.za/honsproj/cgi-bin/view/2021/everett_morris.zip/resources/Project_Poster.pdf">
@@ -142,7 +162,7 @@ const Home: NextPage = () => {
           <h1>2. Key Concepts</h1>
 
           <div>
-            <h3 className={styles.sectionHeading}>2.1 Non-monotonic Reasnoning</h3>
+            <h3 className={styles.sectionHeading} id="section_nr">2.1 Non-monotonic Reasnoning</h3>
             <div className={styles.sectionSpan}>
               <strong>Nonmonotonic reasoning</strong> is an area of research that attempts to formalize different patterns of
               “common sense” reasoning, by dropping monotonicity as a property and investigating how to define
@@ -163,10 +183,10 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div>
-            <h3 className={styles.sectionHeading}>2.2 Rational Closure</h3>
+            <h3 className={styles.sectionHeading} id="section_rc">2.2 Rational Closure</h3>
             <div className={styles.sectionSpan}>
               A particularly appreciated non-monotonic consequence relation is represented by the class of <strong>
-                rational consequence relations</strong>. A consequence relation |∼ is rational iff it satisfies the 
+                rational consequence relations</strong>. A consequence relation |∼ is rational iff it satisfies the
               following properties:
               <br /><br />
               <Image className="rounded-lg" src="/images/RationalClosureProperties1.jpeg" alt="final result" layout="responsive" priority width={100} height={17} />
@@ -179,23 +199,41 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div>
-            <h3 className={styles.sectionHeading}>2.3 Algorithm for Rational Closure</h3>
+            <h3 className={styles.sectionHeading} id="section_arc">2.3 Algorithms for Rational Closure</h3>
             <div className={styles.sectionSpan}>
-              
+              The first algorithm is <strong>BaseRank</strong>, which is an algorithm on the knowledge base that computes
+              the base rank. The lower the rank for the statement the more <em>defeasible</em> it is, and infinite ranks
+              are classical statements, true in every valuation in every ranked model of the knowledge base.
+              <br /><br />
+              <Image className="rounded-lg" src="/images/BaseRank.jpeg" alt="final result" layout="responsive" priority width={100} height={60} />
+              <br />
+              Rational Closure is an alternative syntactic defenition of minimal ranked entailment, whereby it takes in
+              a defeasible query a |~ b and returns <em>true</em> if it is entailed by the knowledge base.
+
+              <br /><br />
+              <Image className="rounded-lg" src="/images/RationalClosure.jpeg" alt="final result" layout="responsive" priority width={100} height={40} />
+              <br />
+              The above algorithm essentially works by checking if there exists an exceptional subset of the knowledge
+              base such that the query is entailed. If the antecedent (ancestor formula) of the lowest base is
+              exceptional (does not entail the knowledge base for any valuation) then the lowest rank is removed.
+              <br /><br />
+              Both algorithms were described <a target="_blank" rel="noreferrer" href="https://open.uct.ac.za/bitstream/handle/11427/32743/thesis_sci_2020_kaliski%20adam.pdf?sequence=1">
+                here
+              </a>, along with a thorough explanation of the KLM framework for those interested.
             </div>
           </div>
         </section>
         <section className={styles.section}>
           <h1>3. Tool Walkthrough</h1>
           <div>
-            <h3 className={styles.sectionHeading}>3.1 Downloadable GUI</h3>
+            <h3 className={styles.sectionHeading} id="download_gui">3.1 Downloadable GUI</h3>
             {/* <Link to={gui} target="_blank" download>Download</Link> */}
             <div className={styles.sectionSpan}>
               <a href="https://github.com/Anri-Lombard/Defeasible-Reasoning/blob/main/GUI/RationalClosureGUI.zip" target="_blank" rel="noreferrer"><u><strong>Click Here To Download GUI</strong></u></a>
             </div>
           </div>
           <div>
-            <h3 className={styles.sectionHeading}>3.2 How To Make Queries</h3>
+            <h3 className={styles.sectionHeading} id="section_htmq">3.2 How To Make Queries</h3>
             <div className={styles.sectionSpan}>
               Prerequisites: Make sure you have Python and Java installed on your machine <br /><br />
               <strong>Step 1</strong>: Download the Defeasible Reasoning GUI <br /><br />
@@ -209,17 +247,45 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div>
-            <h3 className={styles.sectionHeading}>3.3 How To Add Custom Databases</h3>
+            <h3 className={styles.sectionHeading} id="section_htacd">3.3 How To Add Custom Databases</h3>
+            <div className={styles.sectionSpan}>
+              <strong>Step 1</strong>: Add a defeasible query to the top of a .txt file. The Defeasible query must
+              comply with the <a href="https://tweetyproject.org/" target="_blank" rel="noreferrer">
+                tweetyproject
+              </a> standards, where a defeasible query is denoted by ~&gt;.<br /><br />
+              <strong>Step 2</strong>: Add the knowledge base formulas directly below the defeasible query in the .txt file.
+              <br /><br />
+              <strong>Step 3</strong>: Ensure that the file is visible by placing it in the root folder (containing the
+              src and target folders).
+            </div>
           </div>
         </section>
         <section className={styles.section}>
-          <h1>4. Contributing to the tool</h1>
+          <h1 id="section_guidelines">4. Contributing to the tool</h1>
           <div>
-            <h3 className={styles.sectionHeading}>4.1 Contribution Guideline and Github Repository</h3>
+            <div className={styles.sectionSpan}>
+              Developer and experts could contribute to this <a href="https://github.com/Anri-Lombard/Defeasible-Reasoning" target="_blank" rel="noreferrer">
+                repository
+              </a> either through a <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"
+                target="_blank" rel="noreferrer">pull request</a> to modify the code or an <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues"
+                  target="_blank" rel="noreferrer">issue</a> for changes you would like to see.
+            </div>
           </div>
         </section>
         <section className={styles.section}>
-          <h1>5. About This Website</h1>
+          <h1 id="about">5. About This Website</h1>
+          <div className={styles.sectionSpan}>
+            This website is the result of a sophomore research course taken by <a target="_blank" rel="noreferrer" href="https://anrilombard.com/">
+              Anri Lombard
+            </a> and supervised by <a href="https://tommiemeyer.org.za/" target="_blank" rel="noreferrer">Tommie Meyer</a>.
+            <br /><br />
+            Its primary purpose is, initially, to help students climb the steep learning curve if they are interrested in Knowledge
+            Representation research; but aspirationally it could serve as a platform where students can continue to contribute
+            and build upon it so it outgrows its current functionality.
+            <br /><br />
+            Its secondary purpose is to provide a tool for Rational Closure researchers to use for diagnosis of
+            rational closures conclusion to a defeasible query on a custom knowledge base.
+          </div>
         </section>
         {
           showScrollUp ?
