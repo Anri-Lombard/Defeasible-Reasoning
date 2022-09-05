@@ -67,7 +67,7 @@
   }
 
   .sectionSpan {
-    @apply p-5
+    @apply p-5 bg-gray-50/25 rounded-lg
   }
 
   /* background */

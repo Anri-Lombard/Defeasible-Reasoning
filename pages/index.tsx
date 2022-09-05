@@ -123,15 +123,22 @@ const Home: NextPage = () => {
           <div className={styles.videos}>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Yf_S4d2BU4M" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
-          <div className={styles.sectionSpan}>
+          {/* <div className={styles.sectionSpan}>
 
-          </div>
+          </div> */}
         </section>
         <section className={styles.section}>
           <h1>2. Key Concepts</h1>
 
           <div>
             <h3 className={styles.sectionHeading}>2.1 Non-monotonic Reasnoning</h3>
+            <div className={styles.sectionSpan}>
+              <strong>Nonmonotonic reasoning</strong> is an area of research that attempts to formalize different patterns of 
+              “common sense” reasoning, by dropping monotonicity as property and investigating how to define 
+              reasonable notions of consequences. Humans reason by making assumptions based on the knowledge they have, 
+              and then revising those assumptions upon learning new information. Several frameworks were formalized to 
+              mimic this pattern known as defeasible reasoning
+            </div>
           </div>
           <div>
             <h3 className={styles.sectionHeading}>2.2 Minimal Ranked Entailment</h3>
