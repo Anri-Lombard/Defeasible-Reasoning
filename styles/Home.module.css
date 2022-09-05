@@ -63,11 +63,11 @@
   }
 
   .sectionHeading {
-    @apply text-xl font-semibold pb-5
+    @apply text-xl font-semibold py-5 
   }
 
   .sectionSpan {
-    @apply p-5
+    @apply p-5 bg-gray-50/25 rounded-lg
   }
 
   /* background */
