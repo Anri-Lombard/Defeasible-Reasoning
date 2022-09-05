@@ -11,8 +11,13 @@ body {
 }
 
 a {
-  color: inherit;
+  color: skyblue;
   text-decoration: none;
+  transition: all 0.25s;
+}
+
+a:hover {
+  color: rgb(246, 97, 184);
 }
 
 * {

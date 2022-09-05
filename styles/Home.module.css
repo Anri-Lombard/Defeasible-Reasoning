@@ -63,7 +63,7 @@
   }
 
   .sectionHeading {
-    @apply text-xl font-semibold pb-5
+    @apply text-xl font-semibold py-5 
   }
 
   .sectionSpan {
