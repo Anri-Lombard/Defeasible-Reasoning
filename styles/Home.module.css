@@ -10,11 +10,10 @@
 
   .contents {
     border: 4px solid white;
-    /* background-color: #256D85; */
     border-radius: 15px;
     padding: 2rem;
     font-size: 16px;
-    @apply text-center bg-cyan-400/30
+    @apply text-center bg-slate-50/10
   }
 
   .contentsText {
