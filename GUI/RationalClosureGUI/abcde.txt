@@ -1,0 +1,15 @@
+y ~> !m
+b => a
+c => b
+d => c
+e => d
+f => e
+g => f
+a ~> z
+b ~> !z
+c ~> z
+d ~> !z
+e ~> z
+f ~> !z
+g ~> z
+!y
